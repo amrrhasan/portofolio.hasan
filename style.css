@@ -244,30 +244,32 @@ span{
         content: "Web Designer";
     }
     61%, 80%{
-        content: "YouTuber";
+        content: "Content Creator";
     }
     81%, 100%{
-        content: "Script Writer";
+        content: "High School Student";
     }
 }
 
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
+        display: flex;
+        flex-direction: row;
     }
 }
 
 @media (max-width: 955px){
     .home{
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         gap: 3rem;
-        padding-top: 10rem;
+        padding-top: 12rem;;
     }
 
     .home-content {
         min-width: auto;
-        width: 100px;
+        width: 100%;
     }
 
     .typing-text span {
@@ -275,7 +277,12 @@ span{
     }
 
     .home-img img {
-        width: 60vw;
-        width: 250px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    html {
+        font-size: 50%;
     }
 }
